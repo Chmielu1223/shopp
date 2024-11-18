@@ -1,0 +1,37 @@
+supplier:
+  api_url: "https://api.dostawca.com/products"
+  api_key: "TWÓJ_KLUCZ_API"
+
+woocommerce:
+  url: "https://twoj-sklep.pl"
+  consumer_key: "KLIENT_API"
+  consumer_secret: "TAJNY_KLUCZ"
+
+translation:
+  api_key: "TWÓJ_KLUCZ_DEEPL"
+  base_url: "https://api-free.deepl.com/v2/translate"
+
+languages:
+  - "EN"
+  - "DE"
+  - "FR"
+  - "ES"
+  - "PL"
+
+pricing:
+  base_margin: 20
+  dynamic_pricing: true
+  competitor_api: "https://api.konkurencja.com/prices"
+
+notifications:
+  email:
+    smtp_server: "smtp.mail.com"
+    port: 587
+    username: "twojemail@mail.com"
+    password: "haslo"
+  slack:
+    webhook_url: "https://hooks.slack.com/services/TWÓJ_WEBHOOK"
+
+inventory:
+  low_stock_threshold: 5
+  auto_hide_unavailable: true
