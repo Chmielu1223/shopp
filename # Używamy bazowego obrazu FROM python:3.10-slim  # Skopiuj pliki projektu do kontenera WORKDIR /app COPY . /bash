@@ -5,3 +5,8 @@ git commit -m "Dodanie pliku Dockerfile"\
 git remote add origin https://github.com/USER/REPO.git
 git branch -M main
 git push -u origin main
+git remote add origin https://github.com/chmielu123/Docker.git
+git add .
+git commit -m "Dodanie pliku Dockerfile"
+git branch -M main\
+git push -u origin main
