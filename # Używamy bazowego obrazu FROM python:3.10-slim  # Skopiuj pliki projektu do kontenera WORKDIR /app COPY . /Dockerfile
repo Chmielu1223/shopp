@@ -1,12 +1,14 @@
-# Używamy bazowego obrazu
+# Użycie obrazu bazowego z Pythonem
 FROM python:3.10-slim
 
-# Skopiuj pliki projektu do kontenera
+# Ustawienie katalogu roboczego w kontenerze
 WORKDIR /app
+
+# Skopiowanie plików projektu do katalogu w kontenerze
 COPY . /app
 
-# Zainstaluj wymagane zależności
-RUN pip install -r requirements.txt
+# Instalacja zależności z pliku requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Uruchom aplikację
+# Definiowanie polecenia uruchamiania aplikacji
 CMD ["python", "app.py"]
